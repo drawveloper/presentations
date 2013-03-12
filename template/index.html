@@ -10,7 +10,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/sky.css" id="theme">
+		<link rel="stylesheet" href="../css/night.css" id="theme">
+        <link rel="stylesheet" href="../css/main.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="../css/zenburn.css">
@@ -358,7 +359,7 @@ function linkify( selector ) {
 					{ src: '../lib/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: '../lib/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '../lib/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 
