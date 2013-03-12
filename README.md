@@ -1,1 +1,1 @@
-Presentation repository. All presentations based on (Reveal.js)[https://github.com/hakimel/reveal.js].
+Presentations repository. All presentations based on [Reveal.js](https://github.com/hakimel/reveal.js).
