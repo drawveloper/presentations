@@ -9,15 +9,14 @@ Presentations are based on the excellent [Reveal.js](https://github.com/hakimel/
 
 ## Usage
 
-It is very simple to use this as a bootstrap for your own presentations!
+It is very simple to use this as a bootstrap for your own presentations! You must have [node.js](http://nodejs.org/) installed.
 
-Simply clone the repository:
+Simply clone the repository and install the [npm](https://github.com/isaacs/npm) depencies:
 
 	git clone git://github.com/gadr90/presentations.git
-
-And install the [npm](https://github.com/isaacs/npm) depencies:
-
+	cd presentations
 	npm install
+    npm install -g grunt-cli
 
 You're done! Now run grunt:
 
