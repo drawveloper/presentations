@@ -44,7 +44,7 @@
         }
 
         .fatcode code {
-            word-wrap: initial;
+            word-wrap: normal;
             min-width: 990px;
         }
     </style>
@@ -72,6 +72,7 @@
 
                     - Augusto Barbosa
                     - Breno Calazans
+                    - Felipe Parpinelli
                     - Gabriel Arrais
                     - Guilherme Rodrigues
 
@@ -211,6 +212,7 @@ Gruntfile.coffee
             resourceToken: process.env['RESOURCE_TOKEN'] or 'http://vtex.io'
             relativePath: ''
             pkg: grunt.file.readJSON('package.json')
+            pacha: grunt.file.readJSON('tools/pachamama/pachamama.config')[0]
             clean: ['build', 'deploy']
             copy:
                 main:
@@ -279,10 +281,10 @@ Gruntfile.coffee
                     options:
                         replacements: [
                             pattern: /src="(\.\.\/)?(?!http|\/|\/\/)/ig
-                            replacement: 'src="<%= resourceToken %>/<%= pkg.name %>/<%= meta.commit %>/'
+                            replacement: 'src="<%= resourceToken %>/<%= pacha.infrastructure.s3.bucket %>/<%= meta.commit %>/'
                         ,
                             pattern: /href="(\.\.\/)?(?!http|\/|\/\/)/ig
-                            replacement: 'href="<%= resourceToken %>/<%= pkg.name %>/<%= meta.commit %>/'
+                            replacement: 'href="<%= resourceToken %>/<%= pacha.infrastructure.s3.bucket %>/<%= meta.commit %>/'
                         ]
 
             connect:
@@ -362,6 +364,7 @@ Gruntfile.coffee
         grunt.registerTask 'gen-version', ->
             env = this.args[0] or 'dev'
             console.log 'Deploying to environment:', env
+            console.log 'VTEX IO Directory:', grunt.config('pacha').infrastructure.s3.bucket
             grunt.config 'meta.env', env
             grunt.task.run ['set-version', 'copy:env', 'string-replace:deploy']
 
@@ -401,22 +404,202 @@ remote.json
             "X-Track": "mkp1"
         },
         "bounces": [
-            ".*loader.gif",
-            ".*login-custom.css",
             ".*checkout-custom.css",
             "/checkout/js/.*",
             "/checkout/css/.*",
-            "^/checkout/$",
             "(?!.*add)/checkout/cart/.*",
-            "^(?!ReturnUrl)/checkout/myorders/.*$",
             "/checkout/templates/.*"
         ],
         "mapping": false,
         "mappings": {
             "/arquivos/checkout-.*": "../UserExperience/custom-stores/build/",
-            "/arquivos/login-custom.css": "../UserExperience/custom-stores/build/login-custom.css"
+            "/arquivos/login-custom.css": "../UserExperience/custom-stores/login.css"
         }
     }
+            </script>
+        </section>
+
+        <section data-markdown class="tallcode fatcode">
+            <script type="text/template">
+Testando o deploy
+
+        $ grunt deploy:stable
+
+        Running "deploy:beta" (deploy) task
+
+        Running "clean:0" (clean) task
+        Cleaning "build"...OK
+
+        Running "clean:1" (clean) task
+        Cleaning "deploy"...OK
+
+        Running "copy:main" (copy) task
+        Created 9 directories, copied 14 files
+
+        Running "coffee:main" (coffee) task
+        File build/js/main.js created.
+        File build/js/people.js created.
+
+        Running "coffee:test" (coffee) task
+        File build/spec/peopleSpec.js created.
+
+        Running "less:main" (less) task
+        File build//style/main.css created.
+
+        Running "copy:debug" (copy) task
+        Copied 1 files
+
+        Running "useminPrepare:html" (useminPrepare) task
+        Going through build/index.html to update the config
+        Looking for build script HTML comment blocks
+
+        Found a block:
+        <!-- build:css style/style.css -->
+        (...)
+        <!-- endbuild -->
+        Updating config with the following assets:
+            - build/lib/bootstrap/css/bootstrap.css
+            - build/lib/bootstrap/css/bootstrap-responsive.css
+            - build/style/main.css
+
+        Found a block:
+        <!-- build:js js/lib.js -->
+        (...)
+        <!-- endbuild -->
+        Updating config with the following assets:
+            - build/lib/zepto/zepto.js
+            - build/lib/zepto/zepto-jquery.js
+            - build/lib/bootstrap/js/bootstrap.js
+            - build/lib/lodash/lodash.js
+
+        Found a block:
+        <!-- build:js js/app.js -->
+        (...)
+        <!-- endbuild -->
+        Updating config with the following assets:
+            - build/js/main.js
+
+        Configuration is now:
+
+          cssmin:
+          { 'build/style/style.css': 'build/style/style.css' }
+
+          concat:
+          { 'build/style/style.css':
+           [ 'build/lib/bootstrap/css/bootstrap.css',
+             'build/lib/bootstrap/css/bootstrap-responsive.css',
+             'build/style/main.css' ],
+          'build/js/lib.js':
+           [ 'build/lib/zepto/zepto.js',
+             'build/lib/zepto/zepto-jquery.js',
+             'build/lib/bootstrap/js/bootstrap.js',
+             'build/lib/lodash/lodash.js' ],
+          'build/js/app.js': [ 'build/js/main.js' ] }
+
+          uglify:
+          { 'build/js/lib.js': 'build/js/lib.js',
+          'build/js/app.js': 'build/js/app.js' }
+
+          requirejs:
+          {}
+
+        Running "concat:build/style/style.css" (concat) task
+        File "build/style/style.css" created.
+
+        Running "concat:build/js/lib.js" (concat) task
+        File "build/js/lib.js" created.
+
+        Running "concat:build/js/app.js" (concat) task
+        File "build/js/app.js" created.
+
+        Running "uglify:build/js/lib.js" (uglify) task
+        File "build/js/lib.js" created.
+
+        Running "uglify:build/js/app.js" (uglify) task
+        File "build/js/app.js" created.
+
+        Running "cssmin:build/style/style.css" (cssmin) task
+        File build/style/style.css created.
+
+        Running "usemin:html" (usemin) task
+
+        Processing as HTML - build/index.html
+        Update the HTML to reference our concat/min/revved script files
+        Update the HTML with the new css filenames
+        Update the HTML with the new img filenames
+        Update the HTML with data-main tags
+        Update the HTML with the data tags
+        Update the HTML with background imgs, case there is some inline style
+        Update the HTML with anchors images
+        Update the HTML with reference in input
+
+        Running "jasmine:test" (jasmine) task
+        Testing jasmine specs via phantom
+        ....
+        4 specs in 0.005s.
+        >> 0 failures
+
+        Running "gen-version:beta" (gen-version) task
+        Deploying to environment: beta
+        VTEX IO Directory: admin/speedbag
+
+        Running "set-version" task
+        Version set by git commit to: dc1e38695ccd4bca6c033dd3d0bec20c4a638be5
+
+        Running "copy:env" (copy) task
+        Copied 2 files
+
+        Running "string-replace:deploy" (string-replace) task
+
+        Running "copy:deploy" (copy) task
+        Created 11 directories, copied 22 files
+
+        Done, without errors.
+            </script>
+        </section>
+
+        <section data-markdown class="tallcode fatcode">
+            <script type="text/template">
+Estrutura gerada
+
+        $ tree deploy
+        deploy/
+        ├── beta
+        │   ├── index.debug.html
+        │   └── index.html
+        └── dc1e38695ccd4bca6c033dd3d0bec20c4a638be5
+            ├── index.debug.html
+            ├── index.html
+            ├── js
+            │   ├── app.js
+            │   ├── lib.js
+            │   ├── main.js
+            │   └── people.js
+            ├── lib
+            │   ├── bootstrap
+            │   │   ├── css
+            │   │   │   ├── bootstrap.css
+            │   │   │   ├── bootstrap.min.css
+            │   │   │   ├── bootstrap-responsive.css
+            │   │   │   └── bootstrap-responsive.min.css
+            │   │   ├── img
+            │   │   │   ├── glyphicons-halflings.png
+            │   │   │   └── glyphicons-halflings-white.png
+            │   │   └── js
+            │   │       ├── bootstrap.js
+            │   │       └── bootstrap.min.js
+            │   ├── lodash
+            │   │   ├── lodash.js
+            │   │   └── lodash.min.js
+            │   └── zepto
+            │       ├── zepto-jquery.js
+            │       ├── zepto.js
+            │       └── zepto.min.js
+            ├── spec
+            │   └── peopleSpec.js
+            └── style
+            ├── main.css
+            └── style.css
             </script>
         </section>
 
@@ -459,6 +642,67 @@ remote.json
 
         <section data-markdown>
             <script type="text/template">
+                ## VTEX IO
+
+                (ou: a razão de tudo isso)
+
+                ### http(s)://vtex.io/
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Diretório pai
+                http://vtex.io/checkout-ui/
+
+                ### Diretórios stable/beta/dev
+                /**stable**/index.html
+
+                Aponta para arquivos no...
+
+                ### Diretório de commit
+                /**dc1e38695ccd4bca6c033dd3d0bec20c4a638be5**/
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Index diferentes apontam para commits diferentes!
+
+                Ou seja, voltar versão == reverter um index.html.
+
+                Ou seja, deploy sem downtime!
+
+                Futuro: testes AB?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                Ok, ok, mas...
+                ### Como fazer o deploy?
+
+                Muito difícil...
+
+                    git checkout -b beta/1.0.0
+                    git push origin beta/1.0.0
+                    echo Vá pegar um café enquanto o Pachamama trabalha.
+
+                Pronto.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Dúvidas?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Obrigado!
+
+                <small>(eu vou perseguir cada um de vocês até termos todos os apps nesse formato!)</small>
             </script>
         </section>
 
