@@ -45,6 +45,13 @@
             min-height: 670px;
         }
 
+        section.mediumcode {
+            top: -300px !important;
+        }
+        .mediumcode code {
+            min-height: 520px;
+        }
+
         .fatcode pre {
             left: -13% !important;
         }
@@ -171,7 +178,7 @@
             </script>
         </section>
 
-        <section data-markdown class="tallcode fatcode">
+        <section data-markdown class="mediumcode fatcode">
         <script type="text/template">
 Resultado
 
@@ -191,15 +198,21 @@ Resultado
         Running "less:main" (less) task
         File build//style/main.css created.
 
-        Running "livereload-start" task
-        ... Starting Livereload server on 35729 ...
-
-        Running "connect:livereload" (connect) task
+        Running "connect:dev" (connect) task
         Starting connect web server on localhost:9001.
 
-        Running "regarde:dev" (regarde) task
-        Watching src/**/*.html,src/**/*.coffee,src/**/*.js,src/**/*.less
+        Running "watch:dev" (watch) task
+        Waiting...
         </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Estrutura
+
+                ![Estrutura](speedbag.png)
+
+            </script>
         </section>
 
         <section class="tallcode fatcode">
@@ -629,7 +642,7 @@ Estrutura gerada
             },
              "infrastructure": {
                  "s3": {
-                     "bucket": "admin/speedbag" // Importante! Caminho onde vai ser servido
+                     "ApplicationDirectory": "admin/speedbag" // Importante! Caminho onde vai ser servido
                  }
              }
         }
