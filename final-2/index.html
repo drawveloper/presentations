@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Presentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="Guilherme Rodrigues">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        html {
+            background: #777;
+            background-color: #777;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="../css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv.js"></script>
+    <![endif]-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+        <section data-markdown>
+            <script type="text/template">
+                # Laere
+                <br/>
+                ### um ambiente especializado para aprendizado de programação
+                <br/>
+                <small><a href="http://github.com/gadr">Guilherme Rodrigues</a></small>
+                <br/>
+                <small><a href="http://www.inf.puc-rio.br/?page_id=117">Bruno Feijó</a></small>
+            </script>
+        </section>
+
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Antes de tudo...
+
+                    Uma palavra do Sr. Presidente.
+
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/6XvmhE1J9PY" frameborder="0" allowfullscreen></iframe>
+                    <!--<video controls="controls" width="320" height="176">
+                        <source src="../President Obama calls on every American to learn code-6XvmhE1J9PY.mp4" type="video/mp4" />&lt;!&ndash; WebKit &ndash;&gt;
+                        <track src="../President Obama calls on every American to learn code-6XvmhE1J9PY.en.vtt" kind="subtitle" srclang="en-US" label="English" />
+                        Your browser does not support HTML5 video.
+                    </video>-->
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Ambiente Atual
+
+                    Outros problemas
+
+                    - Dificuldade de continuar estudo fora de aula
+                    - Mandar exercício para si por email no fim da aula?
+                    - Excelente material existente online ignorado!
+                    - Teaching Tree
+                    - Coursera
+                    - CodeAcademy... e outros
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Ambiente Atual
+
+                    Resultados atuais
+
+                    - Programação é uma matéria
+                    - Mal-vista,
+                    - "Impopular",
+                    - Tida como "confusa" e "inútil" (!!!)
+                    - Pode ser uma matéria vedete!
+                </script>
+            </section>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Windows
+
+                - Ambientes pessoais dos alunos são diversos...
+                - Windows? Mac? Com sorte... Linux?
+                - Todos tem algo em comum: Browser.
+            </script>
+        </section>
+
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Linguagem C
+
+                    - Linguagem estaticamente tipada - pró ou contra?
+                    - Pouco uso no mercado
+                    - Passo de compilação - complexo para iniciantes
+                    - 90% dos alunos não vão seguir programação
+                    - Podemos mudar isso!
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Linguagem C
+
+                    Prós
+
+                    - "Base" para aprender qualquer linguagem
+                    - Sintaxe universal
+                    - Introduz tipagem estática cedo
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Linguagem C
+
+                    Contras
+
+                    - Tipagem estática é uma complexidade desnecessária
+                    - Compilação é uma complexidade desnecessária
+                    - "includes" e etc são complexidades desnecessárias
+                    - Em resumo: **complexidade desnecessária**
+                </script>
+            </section>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Visual Studio
+
+                - Ferramenta para *programadores*, não *estudantes*
+                - Feature-creep - milhões de botões - confuso
+                - Dificuldade nos casos de uso básicos (abrir exercício!)
+                - **Complexidade desnecessária**
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Motivações
+
+                Novidades interessantes
+
+                - Flip Education
+                - Educação à distância em massa
+                - Programação reativa-funcional
+                - "Learnable Programming" - Bret Victor
+                - JavaScript everywhere - a nova linguagem ubíqua
+                - No Browser
+                - No Server (Node.js)
+                - No Hardware (Arduino)
+                - CoffeeScript, Dart, Typescript - "Novo Assembly"
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Propostas
+
+                Quais as características de um melhor ambiente de ensino de programação?
+
+                - **Reatividade** - ver o resultado imediatamente.
+                - **Web**, mobile-first - estudar de qualquer lugar.
+                - Criar **engagement**
+                - Tornar-se uma matéria divertida, não odiada.
+                - Despertar os talentos ao invés de expulsá-los.
+                - Facilidade de uso em primeiro lugar.
+                - Gamification, intermitent reward schedule.
+                - Alavancar-se de **recursos existentes**
+                - Milhares de vídeos explicativos de algoritmos!
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Reatividade
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Web
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Por que não Lua?
+
+                - Mercado
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+
+            </script>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="../lib/js/head.min.js"></script>
+<script src="../js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '../lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            } },
+            { src: '../plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: '../plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: '../plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: '../plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } },
+            { src: '../plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } }
+        ]
+    });
+
+</script>
+</body>
+</html>
