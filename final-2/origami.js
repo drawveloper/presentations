@@ -17,8 +17,8 @@ window.requestAnimFrame = (function(){
 (function(){
     var canvas = document.getElementById('origami').appendChild( document.createElement( 'canvas' ) ),
         context = canvas.getContext( '2d' ),
-        width = window.innerWidth,
-        height = window.innerHeight,
+        width = 500,
+        height = 500,
 
     // The number of papers to generate
         quantity = 16,
@@ -158,8 +158,8 @@ window.requestAnimFrame = (function(){
     }
 
     function resize() {
-        canvas.width = width = window.innerWidth;
-        canvas.height = height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
     }
 
     function previousLayout() {
