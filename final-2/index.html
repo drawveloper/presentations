@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Presentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="Guilherme Rodrigues">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        html {
+            background: #777;
+            background-color: #777;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/reveal.css">
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="../assets/style/fonts.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '../assets/reveal.js-2.6.2/css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+        <section data-markdown>
+            <script type="text/template">
+                # Laere
+                <br/>
+                ### um ambiente especializado para aprendizado de programação
+                <br/>
+                <small><a href="http://github.com/gadr">Guilherme Rodrigues</a></small>
+                <br/>
+                <small><a href="http://www.inf.puc-rio.br/?page_id=117">Bruno Feijó</a></small>
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Antes de tudo...
+
+                Uma palavra do Presidente dos EUA
+
+                <!--<iframe width="560" height="315" src="//www.youtube.com/embed/6XvmhE1J9PY" frameborder="0" allowfullscreen></iframe>-->
+                <video controls="controls" width="560" height="315">
+                    <source src="President Obama calls on every American to learn code-6XvmhE1J9PY.mp4" type="video/mp4" /><!-- WebKit -->
+                    <track src="President Obama calls on every American to learn code-6XvmhE1J9PY.en.vtt" kind="subtitle" srclang="en-US" label="English" />
+                    Your browser does not support HTML5 video.
+                </video>
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Problemas...
+            </script>
+        </section>
+
+        <section data-background="tools.jpg">
+            <h3 class="fragment roll-in st">
+                Nossas ferramentas de ensino não são <p class="hi">eficientes</p>
+            </h3>
+        </section>
+
+        <section data-background="bored.jpg">
+            <h3 class="fragment roll-in st top">
+                Nossos alunos não estão <p class="hi">interessados</p>
+            </h3>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Precisamos urgentemente...
+            </script>
+        </section>
+
+        <section data-background="break.jpg">
+            <h3 class="fragment roll-in st">
+                Quebrar nossos <p class="hi">paradigmas</p>
+            </h3>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Muitos problemas...
+            </script>
+        </section>
+
+        <section data-background="vs.png">
+            <h3 class="fragment roll-in st">
+                Ferramentas <p class="hi">complexas</p>
+            </h3>
+        </section>
+
+        <section data-background="desktop.jpg">
+            <h3 class="fragment roll-in st">
+                Alunos <p class="hi">presos</p> a desktops
+            </h3>
+        </section>
+
+        <section data-background="console.png">
+            <h3 class="fragment roll-in st">
+                Resultados <p class="hi">desinteressantes</p>
+            </h3>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ### Soluções!
+            </script>
+        </section>
+
+        <section data-background="codepen.png" data-background-size="700px">
+            <h3 class="fragment roll-in st">
+                Ferramentas mais <p class="hi">simples</p>
+            </h3>
+        </section>
+
+        <section data-background="mobility.jpg">
+            <h3 class="fragment roll-in st">
+                Oferecer <p class="hi">mobilidade</p>
+            </h3>
+        </section>
+
+        <section>
+            <div id="origami"></div>
+            <h3 class="fragment roll-in">
+                Resultados <p class="hi">interessantes</p>
+            </h3>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Motivações
+
+                O que me levou a desenvolver o Laere?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Flip Education
+            </script>
+        </section>
+
+        <section>
+            <h3>JavaScript everywhere</h3>
+            <ul>
+                <li class="fragment roll-in">No Browser</li>
+                <li class="fragment roll-in">No Server (Node.js)</li>
+                <li class="fragment roll-in">No Hardware (Arduino)</li>
+            </ul>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Propostas
+
+                Quais as características de um
+
+                melhor ambiente de <p class="hi">ensino</p> de programação?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                - **Reatividade** - ver o resultado imediatamente.
+                - **Web**, mobile-first, estudar de qualquer lugar.
+                - Criar **engagement**
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                - Despertar os talentos ao invés de expulsá-los.
+                - Facilidade de uso em primeiro lugar.
+                - Gamification, intermitent reward schedule.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                - Alavancar-se de **recursos existentes**
+                - Milhares de vídeos explicativos existentes!
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Laere é...
+            </script>
+        </section>
+
+        <section>
+            <h3>
+                Um content management system...
+            </h3>
+            <h3 class="fragment roll-in">
+                Focado em <p class="hi">professores</p>
+            </h3>
+            <h3 class="fragment roll-in">
+                Focado em <p class="hi">alunos</p>
+            </h3>
+        </section>
+
+        <section>
+            <h3>
+                Um agregador...
+            </h3>
+            <h3 class="fragment roll-in">
+                para <p class="hi">vídeos</p>
+            </h3>
+            <h3 class="fragment roll-in">
+                para <p class="hi">exercícios</p>
+            </h3>
+            <h3 class="fragment roll-in">
+                para <p class="hi">tudo!</p>
+            </h3>
+        </section>
+
+        <section>
+            <h3>
+                Um serviço online
+            </h3>
+            <h3 class="fragment roll-in">
+                em um estágio muito alpha
+            </h3>
+            <h3 class="fragment roll-in">
+                visite-nos:
+            </h3>
+            <h3 class="fragment roll-in">
+                <a href="http://laere.co">
+                    <p class="hi">http://laere.co</p>
+                </a>
+            </h3>
+        </section>
+
+        <section data-background="html.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st">
+                Tecnologias <p class="hi">web</p>
+            </h3>
+        </section>
+
+        <section data-background="node.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st top">
+                Server-side <p class="hi">node.js</p>
+            </h3>
+        </section>
+
+        <section data-background="angular.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st">
+                Front end <p class="hi">Angular</p>
+            </h3>
+        </section>
+
+        <section data-background="mongo.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st top">
+                Database <p class="hi">Mongo</p>
+            </h3>
+        </section>
+
+        <section data-background="travis.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st">
+                Continous <p class="hi">delivery</p>
+            </h3>
+        </section>
+
+        <section data-background="digitalocean.png" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st top">
+                Altamente <p class="hi">escalável</p>
+            </h3>
+        </section>
+
+        <section data-background="open.jpg" data-background-size="700px" data-background-color="white">
+            <h3 class="fragment roll-in st">
+                Completamente <p class="hi">open source</p>
+            </h3>
+        </section>
+
+        <section data-background="architecture.png" data-background-size="600px" data-background-color="white">
+        </section>
+
+        <section data-background="diagram.png" data-background-size="700px" data-background-color="white">
+        </section>
+
+        <section>
+            <h3>
+                Uma breve <p class="hi">demonstração</p>
+            </h3>
+        </section>
+
+        <section>
+            <h3>
+                Dúvidas?
+            </h3>
+        </section>
+
+        <section>
+            <h3>
+                Muito obrigado pela atenção
+            </h3>
+            <h3 class="fragment roll-in">
+                <a href="http://laere.co">
+                    <p class="hi">http://laere.co</p>
+                </a>
+            </h3>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="../assets/reveal.js-2.6.2/lib/js/head.min.js"></script>
+<script src="../assets/reveal.js-2.6.2/js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '../assets/reveal.js-2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: '../assets/reveal.js-2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: '../assets/reveal.js-2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ].concat([
+            { src: 'origami.js', async: true }
+        ])
+    });
+
+</script>
+</body>
+</html>

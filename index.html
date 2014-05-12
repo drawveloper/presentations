@@ -1,98 +1,98 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="author" content="Guilherme Rodrigues">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<style type="text/css">
-			html {
-				background: #111111;
-				background-color: #111111; }
-		</style>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/night.css" id="theme">
-		<link rel="stylesheet" href="css/main.css">
-		<style type="text/css">
-			.reveal {
-				font-size: 25px;
-			}
-			.reveal .roll {
-				line-height: 1.5;
-			}
-			.reveal h3 {
-				margin-bottom: 15px;
-			}
-		</style>
+<head>
+    <meta charset="utf-8">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="../css/zenburn.css">
+    <title>Presentations by Guilherme Rodrigues</title>
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="../css/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <meta name="description" content="Guilherme Rodrigues' presentations index">
+    <meta name="author" content="Guilherme Rodrigues">
 
-		<!--[if lt IE 9]>
-		<script src="../lib/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<div class="reveal">
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/reveal.min.css">
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/theme/default.css" id="theme">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../assets/reveal.js-2.6.2/lib/css/zenburn.css">
 
-				<section>
-					<h2>Guilherme Rodrigues</h2>
-					<h3>Blog</h3>
-					<p><a href="http://www.moongate.se" target="_blank">Moongate</a></p>
-					<h3>Code</h3>
-					<p><a href="http://www.github.com/gadr90" target="_blank">GitHub</a></p>
-					<h3>Presentations</h3>
-					<ul>
-						<li><a href="final-1/" target="_blank">Projeto Final I</a> - <em>unfinished</em></li>
-<li><a href="vtex-wants-you/" target="_blank">VTEX Wants You!</a></li>
-					</ul>
-				</section>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '../assets/reveal.js-2.6.2/css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
 
-			</div>
+    <!--[if lt IE 9]>
+    <script src="../assets/reveal.js-2.6.2/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-		</div>
+<body>
 
-		<script src="lib/head.min.js"></script>
-		<script src="lib/reveal.min.js"></script>
+<div class="reveal">
 
-		<script>
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: true,
+        <section>
+            <h2>Guilherme Rodrigues</h2>
+            <p><a href="http://blog.gadr.me" target="_blank">First, Do It</a></p>
+            <p><a href="https://github.com/gadr" target="_blank">github.com/gadr</a></p>
+            <br/>
+            <h3>Presentations</h3>
+            <ul>
+                <li><a href="final-1/" target="_blank">Projeto Final I</a></li>
+                <li><a href="final-2/" target="_blank">Projeto Final II</a></li>
+                <li><a href="vtex-wants-you/" target="_blank">VTEX Wants You!</a></li>
+                <li><a href="autoria/" target="_blank">Considerações sobre INF2802</a></li>
+            </ul>
+        </section>
 
-				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+    </div>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: '../lib/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../lib/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../lib/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+</div>
 
-		</script>
+<script src="../assets/reveal.js-2.6.2/lib/js/head.min.js"></script>
+<script src="../assets/reveal.js-2.6.2/js/reveal.min.js"></script>
 
-        <script src="http://localhost:35729/livereload.js"></script>
+<script>
 
-	</body>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '../assets/reveal.js-2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: '../assets/reveal.js-2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '../assets/reveal.js-2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: '../assets/reveal.js-2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
 </html>
