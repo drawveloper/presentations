@@ -2,7 +2,7 @@ body {
   background: white;
 }
 .proxima {
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   color: #525252 !important;
 }
 .reveal h1,
@@ -10,9 +10,11 @@ body {
 .reveal h3,
 .reveal h4,
 .reveal p,
-.reveal span {
+.reveal span,
+.reveal li,
+.reveal blockquote {
   word-wrap: normal;
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   color: #525252 !important;
 }
 .reveal h1,
@@ -27,7 +29,5 @@ body {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border: solid #36b7d7 7px !important;
 }

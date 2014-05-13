@@ -2,7 +2,7 @@ body {
   background: white;
 }
 .proxima {
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   color: #525252 !important;
 }
 .reveal h1,
@@ -10,9 +10,11 @@ body {
 .reveal h3,
 .reveal h4,
 .reveal p,
-.reveal span {
+.reveal span,
+.reveal li,
+.reveal blockquote {
   word-wrap: normal;
-  font-family: proxima-nova, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   color: #525252 !important;
 }
 .reveal h1,
@@ -27,9 +29,7 @@ body {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border: solid #36b7d7 7px !important;
 }
 .author {
   width: 300px;
@@ -37,9 +37,7 @@ body {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border: solid #36b7d7 7px !important;
   background: url('../img/gadr.jpeg') no-repeat;
   background-size: 320px;
   margin: 0 auto !important;
@@ -50,21 +48,35 @@ body {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border: solid #36b7d7 7px !important;
   width: 150px;
   height: 150px;
   background: url('../../vtex-day-2014/lincoln.jpg') no-repeat;
   background-size: 200px;
   background-position: -20px 0px;
   margin: 0 auto !important;
+  border: solid #888888 3px !important;
 }
 .author-name {
   text-transform: none !important;
+}
+.reveal .blue {
+  background: #36b7d7 !important;
+}
+.reveal .blue h1,
+.reveal .blue h2,
+.reveal .blue h3,
+.reveal .blue h4,
+.reveal .blue p,
+.reveal .blue span,
+.reveal .blue li {
+  color: #f5f5f5 !important;
 }
 .reveal .large {
   font-size: 1.5em !important;
   line-height: 1.3em;
   padding: 20px;
+}
+.reveal blockquote {
+  width: 80%;
 }

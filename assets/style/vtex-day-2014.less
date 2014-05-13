@@ -18,6 +18,7 @@
   background-size: 200px;
   background-position: -20px 0px;
   margin: 0 auto !important;
+  border: solid @dark-grey 3px !important;
 }
 
 .author-name {
@@ -26,10 +27,22 @@
 
 .reveal {
 
+  .blue {
+    background: @blue !important;
+    
+    h1, h2, h3, h4, p, span, li {
+      color: @light-grey !important;
+    }
+  }
+  
   .large {
     font-size: 1.5em !important;
     line-height: 1.3em;
     padding: 20px;
+  }
+  
+  blockquote {
+    width: 80%;
   }
   
 }
