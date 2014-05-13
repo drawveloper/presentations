@@ -31,14 +31,15 @@ module.exports = (grunt) ->
     watch:
       options:
         livereload: true
-        spawn: false
       less:
         options:
           livereload: false
         files: ['assets/**/*.less']
         tasks: ['less']
+      css:
+        files: ['assets/**/*.css']
       main:
-        files: ['assets/**/*.css', '**/*.html']
+        files: ['**/*.html']
       grunt:
         files: ['Gruntfile.coffee']
 
