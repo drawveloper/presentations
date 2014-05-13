@@ -44,6 +44,22 @@ body {
   background-size: 320px;
   margin: 0 auto !important;
 }
+.lincoln {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  width: 150px;
+  height: 150px;
+  background: url('../../vtex-day-2014/lincoln.jpg') no-repeat;
+  background-size: 200px;
+  background-position: -20px 0px;
+  margin: 0 auto !important;
+}
 .author-name {
   text-transform: none !important;
 }
