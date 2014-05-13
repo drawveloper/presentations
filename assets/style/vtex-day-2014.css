@@ -80,3 +80,74 @@ body {
 .reveal blockquote {
   width: 80%;
 }
+.reveal .trademark {
+  padding-left: 7px;
+  line-height: 0px;
+  font-size: 130%;
+  top: 30px;
+  position: absolute;
+}
+.reveal .lr {
+  color: #ff0000 !important;
+  -webkit-animation: hue 5s infinite alternate !important;
+}
+@-webkit-keyframes hue {
+  /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+  20% {
+    color: #ccff00;
+  }
+  40% {
+    color: #00ff66;
+  }
+  60% {
+    color: #0066ff;
+  }
+  80% {
+    color: #cc00ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+.reveal a:not(.image):hover {
+  color: #e4ac00;
+  text-shadow: none;
+  border: none;
+}
+.reveal a:not(.image) {
+  color: #e48632;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;
+}
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #e48632;
+}
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #e48632;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #e48632;
+}
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #e48632;
+}
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #e4ac00;
+}
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #e4ac00;
+}
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #e4ac00;
+}
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #e4ac00;
+}
