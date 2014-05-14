@@ -8,6 +8,9 @@
 @dark-grey: #888;
 @grey: #ddd;
 @light-grey: #f5f5f5;
+@orange: #e48632;
+@light-orange: #e4ac00;
+
 
 // Background
 
@@ -44,11 +47,77 @@ body {
     font-size: 1.6em;
     line-height: 1.0em;
   }
+  small {
+    font-size: 0.7em;
+  }
   li {
     padding-bottom: 15px;
   }
-}
 
+  // Overwrite beige.css
+  a:not(.image):hover {
+    color: @light-orange;
+    text-shadow: none;
+    border: none;
+  }
+
+  a:not(.image) {
+    color: @orange;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -ms-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease;
+  }
+
+  .controls div.navigate-left,
+  .controls div.navigate-left.enabled {
+    border-right-color: @orange; }
+
+  .controls div.navigate-right,
+  .controls div.navigate-right.enabled {
+    border-left-color: @orange; }
+
+  .controls div.navigate-up,
+  .controls div.navigate-up.enabled {
+    border-bottom-color: @orange; }
+
+  .controls div.navigate-down,
+  .controls div.navigate-down.enabled {
+    border-top-color: @orange; }
+
+  .controls div.navigate-left.enabled:hover {
+    border-right-color: @light-orange; }
+
+  .controls div.navigate-right.enabled:hover {
+    border-left-color: @light-orange; }
+
+  .controls div.navigate-up.enabled:hover {
+    border-bottom-color: @light-orange; }
+
+  .controls div.navigate-down.enabled:hover {
+    border-top-color: @light-orange; }
+
+  section img {
+    margin: 15px 0px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; 
+  }
+
+  a:hover img {
+    background: transparent;
+    border: none;
+    box-shadow: none; 
+  }
+
+}
 
 .circular {
   width: 300px;
