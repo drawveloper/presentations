@@ -119,6 +119,9 @@ body {
 }
 .reveal code {
   font-family: "source-code-pro";
+  color: #f5f5f5;
+  background: #36b7d7;
+  padding: 0 6px;
 }
 .circular {
   width: 300px;
