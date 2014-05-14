@@ -22,6 +22,27 @@ body {
 .reveal h3,
 .reveal h4 {
   font-weight: bold;
+  text-shadow: none !important;
+}
+.reveal h1 {
+  font-size: 3.7em;
+}
+.reveal h2 {
+  font-size: 2.4em;
+  text-transform: none;
+}
+.reveal h3 {
+  font-size: 2.0em;
+  text-transform: none;
+}
+.reveal p,
+.reveal span,
+.reveal li {
+  font-size: 1.6em;
+  line-height: 1.0em;
+}
+.reveal li {
+  padding-bottom: 15px;
 }
 .circular {
   width: 300px;
