@@ -182,7 +182,8 @@ body {
 .reveal .green h4,
 .reveal .green p,
 .reveal .green span,
-.reveal .green li {
+.reveal .green li,
+.reveal .green p a {
   color: #f5f5f5 !important;
 }
 .reveal .large {
