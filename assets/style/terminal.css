@@ -401,6 +401,7 @@ body {
 .reveal .body span {
   font-family: "source-code-pro", monospace !important;
   color: #63de00!important;
+  line-height: 1.3em !important;
 }
 @keyframes blink {
   0% {
