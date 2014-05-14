@@ -97,6 +97,32 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  
+  .arquivos-style {
+    font-size: 2.0em;
+    line-height: 1.3em;
+    
+    .small {
+     font-size: 0.8em; 
+    }
+  }
+
+  // Overwrite beige.css
+  a:not(.image):hover, a:not(.image):hover span {
+    color: @light-orange !important;
+    text-shadow: none;
+    border: none;
+  }
+
+  a:not(.image), a:not(.image) span {
+    color: @orange !important;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -ms-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease;
+  }
 }
 
 a.minibutton.sidebar-button:hover {

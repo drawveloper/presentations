@@ -240,6 +240,29 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.reveal .arquivos-style {
+  font-size: 2.0em;
+  line-height: 1.3em;
+}
+.reveal .arquivos-style .small {
+  font-size: 0.8em;
+}
+.reveal a:not(.image):hover,
+.reveal a:not(.image):hover span {
+  color: #e4ac00 !important;
+  text-shadow: none;
+  border: none;
+}
+.reveal a:not(.image),
+.reveal a:not(.image) span {
+  color: #e48632 !important;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;
+}
 a.minibutton.sidebar-button:hover {
   background-color: #dddddd;
   background-image: linear-gradient(#eeeeee, #dddddd);
