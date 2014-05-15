@@ -236,10 +236,13 @@ body {
 .reveal img.fragment {
   width: 100%;
 }
-.reveal .vtexlab {
+.reveal img.vtexlab {
   width: 40%;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+.reveal p.vtexlab {
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .reveal .arquivos-style {
   font-size: 2.0em;
