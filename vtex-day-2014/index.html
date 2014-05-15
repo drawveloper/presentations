@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Front end tools</title>
+
+        <meta name="description" content="Front end tools for VTEX developers">
+        <meta name="author" content="Guilherme Rodrigues">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script type="text/javascript" src="//use.typekit.net/cej4wei.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- LOCAL FALLBACK -->
+        <link rel="stylesheet" href="fonts.css">
+
+        <link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/reveal.min.css">
+		<link rel="stylesheet" href="../assets/reveal.js-2.6.2/css/theme/beige.css" id="theme">
+        <link rel="stylesheet" href="../assets/style/terminal.css">
+        <link rel="stylesheet" href="../assets/style/vtex-day-2014.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../assets/reveal.js-2.6.2/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../assets/reveal.js-2.6.2/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+        <script src="../assets/reveal.js-2.6.2/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>FERRAMENTAS MODERNAS</h1>
+                    <h3>para</h3>
+					<h2>DESENVOLVIMENTO FRONT-END</h2>
+                    <br/>
+                    <p>Porque a vida é muito curta para F5</p>
+				</section>
+                <section>
+                    <div class="author"></div>
+                    <br/>
+                    <h3 class="author-name">Guilherme Rodrigues</h3>
+                    <p>Desenvolvedor Front-end</p>
+                </section>
+                <section data-background="#3aa850" class="green">
+                    <section>
+                        <h1>CONVERSÃO</h1>
+                    </section>
+                </section>
+                <section>
+                    <h1>Ferramentas</h1>
+                    <br/>
+                    <blockquote class="fragment roll-in large">
+                        Give me six hours to chop down a tree and I will spend the first four sharpening the axe
+                    </blockquote>
+                    <br/>
+                    <div class="fragment roll-in">
+                        <div class="lincoln"></div>
+                        <p>Abraham Lincoln</p>
+                    </div>
+                    <aside class="notes">
+                        Ferramentas são investimento
+                        Gastam um pouco de tempo no começo
+                        Salvam muito tempo depois
+                    </aside>
+                </section>
+                <section class="blue" data-background-color="#36b7d7">
+                    <section>
+                        <h1>GRUNT</h1>
+                        
+                        <h2>é o nosso machado</h2> 
+                        <h2>(da vez)</h2>
+
+                        <aside class="notes">
+                            Grunt faz tarefas repetitivas
+                            Como make
+                        </aside>
+                    </section>
+                    <section data-markdown>
+                        adendo:
+                        
+                        ## GRUNT vs Gulp
+                        
+                        - Gulp é o novo queridinho
+                        - O exemplo "simples" é lindo
+                        - Qualquer coisa mais complexa  
+                        requer PhD em Streams
+                        - Grunt tem mais plugins
+                    </section>
+                    <section data-markdown>
+                        ## conclusão?
+                    </section>
+                    <section data-background="grunt.png" 
+                             data-background-size="50%" 
+                             data-background-color="#e48632">
+                    </section>
+                </section>
+                <section>
+                    <h3>A notícia boa é</h3>
+                    <h2 class="fragment roll-in large">JÁ O AFIAMOS PRA VOCÊS</h2>
+                    <aside class="notes">
+                        Nós usamos Grunt há muito tempo
+                        Temos boas práticas testadas no dia dia
+                    </aside>
+                </section>
+                <section>
+                    <h1>VTEX SPEED</h1>
+                    <br/>
+                    <ul>
+                        <li class="fragment roll-in">Compilação LESS, Coffee, etc</li>
+                        <li class="fragment roll-in">Smart Proxy <span class="trademark"> ®</span></li>
+                        <li class="fragment roll-in">Live Reload <span class="lr fragment roll-in">... em qualquer página!</span></li>                        
+                    </ul>
+                    <br/>
+                    <br/>
+                    <div class="fragment roll-in">
+                        <p>Disponível no <a href="https://github.com/vtex/speed" target="_blank">GitHub</a></p>
+                        <p><a href="https://github.com/vtex/speed" target="_blank">github.com/vtex/speed</a></p>
+                    </div>
+                    <aside class="notes">
+                        Grunt + configurações + proxy + LR
+                    </aside>
+                </section>
+                <section>
+                    <h1>INSTALAÇÃO</h1>
+                </section>
+                <section>
+                    <h3>Instalar Node.js</h3>
+                    <p>
+                        <a href="http://nodejs.org/" target="_blank">
+                            <img src="nodejs.png" alt="Node.js"/>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="http://nodejs.org/" target="_blank">nodejs.org/</a>
+                    </p>
+                </section>
+                <section>
+                    <h3>Instalar Grunt</h3>
+                    <div class="window">
+                        <div class="toolbar">
+                            <div class="top">
+                                <div class="lights">
+                                    <div class="light red">
+                                        <div class="glyph">×</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light yellow">
+                                        <div class="glyph">-</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light green">
+                                        <div class="glyph">+</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div class="folder">
+                                        <div class="tab"></div>
+                                        <div class="body"></div>
+                                    </div>
+                                    VTEX SPEED
+                                </div>
+                                <div class="bubble">
+                                    <div class="shine"></div>
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <span>$ npm install -g grunt-cli <div class="cursor"></div></span>
+                        </div>
+                    </div>
+                    <small style="position: fixed; left: 25%" class="fragment small">Dependendo das condições metereológicas,
+                        <br><code>sudo</code> <br/>pode ser necessário.
+                    </small>
+                    <aside class="notes">
+                        node e npm viram comandos acessiveis da linha de comando
+                        npm é um PACKAGE MANAGER
+                        instala programas e bibliotecas escritos em node
+                    </aside>
+                </section>
+                <section>
+                    <section>
+                        <h3>Clonar VTEX Speed</h3>
+                        <div class="window">
+                            <div class="toolbar">
+                                <div class="top">
+                                    <div class="lights">
+                                        <div class="light red">
+                                            <div class="glyph">×</div>
+                                            <div class="shine"></div>
+                                            <div class="glow"></div>
+                                        </div>
+                                        <div class="light yellow">
+                                            <div class="glyph">-</div>
+                                            <div class="shine"></div>
+                                            <div class="glow"></div>
+                                        </div>
+                                        <div class="light green">
+                                            <div class="glyph">+</div>
+                                            <div class="shine"></div>
+                                            <div class="glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <div class="folder">
+                                            <div class="tab"></div>
+                                            <div class="body"></div>
+                                        </div>
+                                        VTEX SPEED
+                                    </div>
+                                    <div class="bubble">
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <span class="clone">$ git clone git@github.com:vtex/speed.git <div class="cursor"></div></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Ou baixar .zip</h3>
+                        <p>
+                            <img src="githubzip.png" alt="Download VTEX Speed"
+                                 style="-webkit-filter: blur(2px) grayscale(100%);
+-webkit-mask-box-image: -webkit-linear-gradient(black 25%, transparent 15%, transparent 25%, black 10%);"/>
+                            <br/>
+                            <a href="https://github.com/vtex/speed/archive/master.zip" class="minibutton sidebar-button" aria-label="Download vtex/speed as a zip file" rel="nofollow" title="Download vtex/speed as a zip file">
+                                <span class="octicon octicon-cloud-download"></span>
+                                Download ZIP
+                            </a>
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Instalar dependências</h3>
+                    <div class="window">
+                        <div class="toolbar">
+                            <div class="top">
+                                <div class="lights">
+                                    <div class="light red">
+                                        <div class="glyph">×</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light yellow">
+                                        <div class="glyph">-</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light green">
+                                        <div class="glyph">+</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div class="folder">
+                                        <div class="tab"></div>
+                                        <div class="body"></div>
+                                    </div>
+                                    VTEX SPEED
+                                </div>
+                                <div class="bubble">
+                                    <div class="shine"></div>
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <p>$ cd speed/</p>
+                            <span>$ npm install <div class="cursor"></div></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Uso</h1>
+                </section>
+                
+                <section>
+                    <h3>Executar grunt!</h3>
+                    <div class="window">
+                        <div class="toolbar">
+                            <div class="top">
+                                <div class="lights">
+                                    <div class="light red">
+                                        <div class="glyph">×</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light yellow">
+                                        <div class="glyph">-</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                    <div class="light green">
+                                        <div class="glyph">+</div>
+                                        <div class="shine"></div>
+                                        <div class="glow"></div>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div class="folder">
+                                        <div class="tab"></div>
+                                        <div class="body"></div>
+                                    </div>
+                                    VTEX SPEED
+                                </div>
+                                <div class="bubble">
+                                    <div class="shine"></div>
+                                    <div class="glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <span>$ grunt --verbose <div class="cursor"></div></span>
+                        </div>
+                    </div>
+                </section>
+    
+                <section>
+                    <h1>OK, e daí?</h1>
+                </section>
+            
+                <section>
+                    <h2>Navegue para sua loja:</h2>
+                    <p><a href="http://basedevmkp.vtexlocal.com.br" target="_blank">basedevmkp.vtexlocal.com.br</a></p>
+                </section>
+                <section>
+                    <h3>Seus arquivos ficam em</h3>
+                    <br/>
+                    <p>
+                        <code>speed/src/</code>
+                    </p>
+                        
+                </section>
+                <section>
+                    <h3>Arquivos são copiados para</h3>
+                    <br/>
+                    <p>
+                        <code>speed/build/</code>
+                    </p>
+                </section>
+
+                <section>
+                    <img class="fragment" src="speed.gif" alt="grunt --verbose"/>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Smart Proxy te ajuda</h2>
+                        <br/>
+                        <ol>
+                            <li>Seu <code>src/arquivo.css</code></li>
+                            <li>quando acessa página...</li>
+                            <li>Sobrescreve <code>/arquivo.css</code>!</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <p class="arquivos-style">
+                            <a href="http://basedevmkp.vtexlocal.com.br/arquivos/style.css">
+                                <span class="small">basedevmkp.vtexlocal.com.br</span>
+                                <br/>
+                                <span>/arquivos/style.css</span>
+                            </a>
+                        </p>
+                        
+                        <p>acessa arquivo</p>
+                        <br/>
+                        <span><code>src/arquivos/style.css</code></span>
+                    </section>
+                    <section>
+                        <h3>Mais detalhes em:</h3>
+                        <p><a href="https://github.com/gadr/connect-tryfiles" target="_blank">github.com/gadr/connect-tryfiles</a></p>
+                    </section>
+                </section>
+            
+                <section>
+                    <h2>Live Reload te ajuda</h2>
+                    <br/>
+                    <ol>
+                        <li>Altere <code>src/arquivo.css</code></li>
+                        <li>(... 200ms)</li>
+                        <li>Reload automático!</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <img class="fragment" src="speededit.gif" alt="grunt --verbose"/>
+                </section>
+            
+                <section>
+                    <section>
+                        <h2>LESS te ajuda</h2>
+                        <br/>
+                        <ol>
+                            <li>Altere <code>src/arquivo.less</code></li>
+                            <li>(... 200ms)</li>
+                            <li>Criado: <code>build/arquivo.css</code></li>
+                            <li>Reload automático!</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Mais detalhes em:</h3>
+                        <p><a href="http://lesscss.org/" target="_blank">lesscss.org/</a></p>
+                    </section>
+                </section>
+            
+                <section>
+                    <section>
+                        <h2>Imagemin te ajuda</h2>
+                        <br/>
+                        <ol>
+                            <li>Imagem grande <code>src/img.png</code></li>
+                            <li>(... 200ms)</li>
+                            <li>Otimizada: <code>build/img.png</code></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Mais detalhes em:</h3>
+                        <p><a href="https://github.com/gruntjs/grunt-contrib-imagemin" target="_blank">github.com/gruntjs/grunt-contrib-imagemin</a></p>
+                    </section>
+                </section>
+                
+                <section>
+                    <h2>Customize o seu</h2>
+                    <br/>
+                    <h2><code>Gruntfile.coffee</code></h2>
+                    <br/>
+                    <p><a href="http://gruntjs.com/plugins" target="_blank">gruntjs.com/plugins</a></p>
+                </section>
+                
+                <section data-background="gruntplugins.png" data-background-size="90%">
+                </section>
+                
+                <section>
+                    <h1>CONCLUSÃO</h1>
+                </section>
+                
+                <section>
+                    <h2>Deixe o trabalho repetitivo para o</h2>
+                    <h1>COMPUTADOR</h1>
+                </section>
+                
+                <section>
+                    <h2>VTEX SPEED</h2>
+                    <h3>existe para te ajudar a</h3>
+                    <h1>trabalhar mais rápido</h1>
+                </section>
+                
+                <section>
+                    <h2>VTEX SPEED</h2>
+                    <h3>está em constante melhoria</h3>
+                    <p><a href="https://github.com/vtex/speed/issues" target="_blank">github.com/vtex/speed/issues</a></p>
+                </section>
+                
+                <section class="blue" data-background-color="#36b7d7">
+                    <section>
+                        <h1>Dúvidas?</h1>
+                    </section>
+                    <section>
+                        <h2>Que ferramentas <br/>vocês usam?</h2>
+                    </section>
+                </section>
+                
+                <section class="green" data-background-color="#36b7d7">
+                    <section>
+                        <img src="vlab.png" alt="VTEX lab" class="vtexlab"/>
+                        <h1>Obrigado!</h1>
+                        <p class="vtexlab"><a href="http://lab.vtex.com" target="_blank">lab.vtex.com</a></p>
+                    </section>
+                </section>
+            </div>
+
+		</div>
+
+		<script src="../assets/reveal.js-2.6.2/lib/js/head.min.js"></script>
+		<script src="../assets/reveal.js-2.6.2/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../assets/reveal.js-2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/reveal.js-2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/reveal.js-2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/reveal.js-2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/reveal.js-2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../assets/reveal.js-2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

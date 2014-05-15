@@ -1,0 +1,235 @@
+@import "vtexlab";
+
+@author: '../img/gadr.jpeg';
+@lincoln: '../../vtex-day-2014/lincoln.jpg';
+
+.author {
+  .circular;
+  background: url(@author) no-repeat; 
+  background-size: 320px;
+  margin: 0 auto !important;
+}
+
+.lincoln {
+  .circular;
+  width: 150px;
+  height: 150px;
+  background: url(@lincoln) no-repeat; 
+  background-size: 200px;
+  background-position: -20px 0px;
+  margin: 0 auto !important;
+  border: solid @dark-grey 3px !important;
+}
+
+.author-name {
+  text-transform: none !important;
+}
+
+.reveal {
+
+  .blue {
+    background: @blue !important;
+    
+    h1, h2, h3, h4, p, span, li {
+      color: @light-grey !important;
+    }
+  }
+
+  .green {
+    background: @green !important;
+    
+    a, h1, h2, h3, h4, p, span, li, p a {
+      color: @light-grey !important;
+    }
+  }
+  
+  .large {
+    font-size: 1.5em !important;
+    line-height: 1.3em;
+    padding: 20px;
+  }
+  
+  h2.large {
+    font-size: 3.0em !important;
+  }
+  
+  blockquote {
+    width: 80%;
+  }
+  
+  .trademark {
+    padding-left: 7px;
+    line-height: 0px;
+    font-size: 130%;
+    top: 40px;
+    position: absolute;
+  }
+
+  .lr {
+    font-size: 100%;
+    color: hsl(0, 100%, 50%) !important;
+    -webkit-animation: hue 5s infinite alternate !important;
+  }
+
+  @-webkit-keyframes hue {
+    /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+    20% {color: hsl(72, 100%, 50%);}
+    40% {color: hsl(144, 100%, 50%);}
+    60% {color: hsl(216, 100%, 50%);}
+    80% {color: hsl(288, 100%, 50%);}
+    100% {color: hsl(360, 100%, 50%);}
+  }
+
+  span.clone {
+    font-size: 2.9em;
+  }
+  
+  p code {
+    font-size: 1.8em;
+  }
+  
+  img.fragment {
+    width: 100%;
+  }
+  
+  img.vtexlab {
+    width: 40%;
+    margin-top: -40px;
+    margin-bottom: 60px;
+  }
+  
+  p.vtexlab {
+    margin-top: 40px;
+  }
+  
+  .arquivos-style {
+    font-size: 2.0em;
+    line-height: 1.3em;
+    
+    .small {
+     font-size: 0.8em; 
+    }
+  }
+
+  // Overwrite beige.css
+  a:not(.image):hover, a:not(.image):hover span {
+    color: @light-orange !important;
+    text-shadow: none;
+    border: none;
+  }
+
+  a:not(.image), a:not(.image) span {
+    color: @orange !important;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -ms-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease;
+  }
+}
+
+a.minibutton.sidebar-button:hover {
+  background-color: rgb(221, 221, 221);
+  background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
+  background-repeat: repeat-x;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(204, 204, 204);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 0.6em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(51, 51, 51);
+  text-decoration: none solid rgb(51, 51, 51);
+  text-shadow: rgba(255, 255, 255, 0.901961) 0px 1px 0px;
+}
+
+a.minibutton.sidebar-button {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -webkit-user-select: none;
+  background-color: rgb(238, 238, 238);
+  background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
+  background-repeat: repeat-x;
+  border-bottom-color: rgb(213, 213, 213);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(213, 213, 213);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(213, 213, 213);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(213, 213, 213);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 0.6em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  height: 78px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(51, 51, 51);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none solid rgb(51, 51, 51);
+  text-shadow: rgba(255, 255, 255, 0.901961) 0px 1px 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 410px;
+}
