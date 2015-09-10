@@ -280,7 +280,8 @@ body {
   opacity: 0.6; }
 .reveal .author {
   position: absolute;
-  top: -60%;
+  font-size: 0.8em;
+  top: -40%;
   height: 60px; }
 .reveal .slides {
   text-align: left; }
