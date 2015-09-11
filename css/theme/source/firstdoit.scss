@@ -43,10 +43,7 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
        local('Android Emoji'),
        local('Segoe UI'),
        local(EmojiSymbols),
-       local(Symbola),
-       url('font/Symbola-Emoji.eot?#iefix') format('embedded-opentype'),
-       url('font/Symbola-Emoji.woff') format('woff'),
-       url('font/Symbola-Emoji.ttf') format('truetype');
+       local(Symbola);
 
   /* Emoji unicode blocks */
   unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
@@ -82,7 +79,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   }
 
   .emoji {
-    font-family: emoji;
+    font-family: emoji, sans-serif;
     font-size: 0.7em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.6em;
   }
 }

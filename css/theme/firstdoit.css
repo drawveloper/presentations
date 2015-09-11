@@ -267,7 +267,7 @@ body {
 
 @font-face {
   font-family: emoji;
-  src: local('Apple Color Emoji'), local('Android Emoji'), local('Segoe UI'), local(EmojiSymbols), local(Symbola), url('font/Symbola-Emoji.eot?#iefix') format('embedded-opentype'), url('font/Symbola-Emoji.woff') format('woff'), url('font/Symbola-Emoji.ttf') format('truetype');
+  src: local('Apple Color Emoji'), local('Android Emoji'), local('Segoe UI'), local(EmojiSymbols), local(Symbola);
   /* Emoji unicode blocks */
   unicode-range: U1F300-1F5FF, U1F600-1F64F, U1F680-1F6FF, U2600 -26FF; }
 
@@ -290,5 +290,8 @@ body {
   .reveal .slides .noob {
     font-weight: bold; }
 .reveal .emoji {
-  font-family: emoji;
-  font-size: 0.7em; }
+  font-family: emoji, sans-serif;
+  font-size: 0.7em;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.6em; }
