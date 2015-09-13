@@ -1,0 +1,88 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Cabin:500|Cutive+Mono|Noto+Sans|Source+Code+Pro:400);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Noto Sans', sans-serif;
+$mainColor: #000;
+$headingFont: 'Cabin', Impact, sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fff;
+$linkColor: #46ba5f;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+@font-face {
+  font-family: emoji;
+
+  src: local('Apple Color Emoji'),
+       local('Android Emoji'),
+       local('Segoe UI'),
+       local(EmojiSymbols),
+       local(Symbola);
+
+  /* Emoji unicode blocks */
+  unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
+}
+
+.reveal {
+  .footer {
+    font-family: $headingFont;
+    font-weight: 800;
+    position: absolute;
+    bottom: 7%;
+    font-size: 0.9em;
+    opacity: 0.6;
+  }
+
+  .author {
+    position: absolute;
+    font-size: 0.8em;
+    top: -40%;
+    height: 60px;
+  }
+
+  .slides {
+    text-align: left;
+
+    .diff {
+      font-size: 3.05em;
+    }
+
+    .noob {
+      font-weight: bold;
+    }
+  }
+
+  .emoji {
+    font-family: emoji, sans-serif;
+    font-size: 0.7em;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.6em;
+  }
+}

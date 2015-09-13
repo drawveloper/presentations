@@ -1,11 +1,10 @@
 module.exports = (grunt) ->
   pkg = grunt.file.readJSON('package.json')
   verbose = grunt.option('verbose')
-  open = "http://localhost:1990"
-  errorHandler = (err, req, res, next) -> 
-    errString = err.code?.red ? err.toString().red
-    grunt.log.warn(errString, req.url.yellow)
-              
+  open = "http://localhost:8000"
+  port = grunt.option('port') || 8000
+  base = grunt.option('base') || '.'
+
   config =
     less:
       main:
@@ -21,12 +20,9 @@ module.exports = (grunt) ->
         options:
           hostname: "*"
           open: open
-          port: 1990
-          middleware: [
-            require('connect-livereload')({disableCompression: true})
-            require('connect').static('./')
-            errorHandler
-          ]
+          base: base
+          livereload: true
+          port: port
 
     watch:
       options:
