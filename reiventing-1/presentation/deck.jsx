@@ -42,19 +42,11 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
-          <Heading size={2} textColor='black'>
-            How <br/> organizations work
+          <Heading size={2} fit textColor='black'>
+            How organizations
           </Heading>
-          <Appear>
-            <Heading size={2} textColor='black'>
-              and evolve
-            </Heading>
-          </Appear>
-        </Slide>
-
-        <Slide>
-          <Heading size={2} textColor='black'>
-            Evolution of counsciousness
+          <Heading size={2} fit textColor='black'>
+            work and evolve
           </Heading>
         </Slide>
 
@@ -66,20 +58,55 @@ export default class extends React.Component {
 
         <Slide>
           <Heading size={2} textColor='black'>
-            Breakthroughs
+            Evolution of counsciousness
           </Heading>
         </Slide>
+
+        <Slide>
+          <Heading size={2} fit textColor='black'>
+            Breakthroughs
+          </Heading>
+          <Appear>
+            <Heading size={3} fit textColor='black'>
+              in ability to cooperate
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide>
+          <Heading size={2} fit textColor='black'>
+            overview of the main
+          </Heading>
+          <Heading size={3} fit textColor='black'>
+            Paradigms
+          </Heading>
+        </Slide>
+
         <Slide bgColor='red'>
           <Heading>Red</Heading>
         </Slide>
+
+        <Slide bgColor='red'>
+          Wolfpack
+        </Slide>
+
+        <Slide bgColor='red'>
+          <Heading fit>Division of labour</Heading>
+          <Appear>
+            <Heading fit>Command authority</Heading>
+          </Appear>
+        </Slide>
+
         <Slide bgColor='#FF7E00'>
           <Heading>Amber</Heading>
 
         </Slide>
+
         <Slide bgColor='orange'>
           <Heading>Orange</Heading>
 
         </Slide>
+
         <Slide bgColor='green'>
           <Heading>Green</Heading>
 
@@ -116,6 +143,12 @@ export default class extends React.Component {
         <Slide bgColor='#18A7B5'>
           <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
             Teal Organizations have a life and a sense of direction of their own. Instead of trying to predict and control the future, members of the organization are invited to listen in and understand what the organization wants to become, what purpose it wants to serve.
+          </Quote>
+        </Slide>
+
+        <Slide>
+          <Quote textColor='black' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid black"}}>
+            The level of consciousness of an organization cannot exceed the level of consciousness of its leader.
           </Quote>
         </Slide>
       </Deck>
