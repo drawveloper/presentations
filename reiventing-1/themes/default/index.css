@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Tictail Sans";
+    font-weight: 200;
+    src: url("//app.ttcdn.co/fonts/TictailSans-Light.woff"),url("//app.ttcdn.co/fonts/TictailSans-Light.ttf"),url("//app.ttcdn.co/fonts/TictailSans-Light.svg"),url("//app.ttcdn.co/fonts/TictailSans-Light.eot")
+}
+
+@font-face {
+    font-family: "Tictail Sans";
+    font-weight: 400;
+    src: url("//app.ttcdn.co/fonts/TictailSans-Regular.woff"),url("//app.ttcdn.co/fonts/TictailSans-Regular.ttf"),url("//app.ttcdn.co/fonts/TictailSans-Regular.svg"),url("//app.ttcdn.co/fonts/TictailSans-Regular.eot")
+}
+
+@font-face {
+    font-family: "Tictail Sans";
+    font-weight: 600;
+    src: url("//app.ttcdn.co/fonts/TictailSans-SemiBold.woff"),url("//app.ttcdn.co/fonts/TictailSans-SemiBold.ttf"),url("//app.ttcdn.co/fonts/TictailSans-SemiBold.svg"),url("//app.ttcdn.co/fonts/TictailSans-SemiBold.eot")
+}
+
+@font-face {
+    font-family: "Tictail Sans";
+    font-weight: 700;
+    src: url("//app.ttcdn.co/fonts/TictailSans-Bold.woff"),url("//app.ttcdn.co/fonts/TictailSans-Bold.ttf"),url("//app.ttcdn.co/fonts/TictailSans-Bold.svg"),url("//app.ttcdn.co/fonts/TictailSans-Bold.eot")
+}
+
+.spectacle-slide {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+/* Firefox */
+
+_:-moz-tree-row(hover), .spectacle-deck {
+  perspective: 1000px;
+}
+
+_:-moz-tree-row(hover), ul .appear {
+  display: inline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
