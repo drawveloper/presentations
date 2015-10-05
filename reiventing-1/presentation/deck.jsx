@@ -85,35 +85,35 @@ export default class extends React.Component {
 
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Heading>Teal</Heading>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Heading>Self management</Heading>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
             Teal Organizations have found the key to operate effectively, even at a large scale, with a system based on peer relationships, without the need for either hierarchy or consensus.
           </Quote>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Heading>Wholeness</Heading>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
             Organizations encourage people to show up with a narrow “professional” self. Teal Organizations invite us to reclaim our inner wholeness and bring all of who we are to work.
           </Quote>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Heading>Evolutionary purpose</Heading>
         </Slide>
 
-        <Slide bgColor='teal'>
+        <Slide bgColor='#18A7B5'>
           <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
             Teal Organizations have a life and a sense of direction of their own. Instead of trying to predict and control the future, members of the organization are invited to listen in and understand what the organization wants to become, what purpose it wants to serve.
           </Quote>
