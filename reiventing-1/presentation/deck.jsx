@@ -225,7 +225,7 @@ export default class extends React.Component {
         </Slide>
 
         <Slide bgColor='#18A7B5'>
-          <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
+          <Quote textColor='white' style={{textAlign: 'left', fontSize: '3.8em', borderLeft: "3px solid white"}}>
             Teal Organizations have a life and a sense of direction of their own. Instead of trying to predict and control the future, members of the organization are invited to listen in and understand what the organization wants to become, what purpose it wants to serve.
           </Quote>
         </Slide>
@@ -259,7 +259,7 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
-          <Quote textColor='black' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid black"}}>
+          <Quote textColor='black' style={{textAlign: 'left', fontSize: '3.6em', borderLeft: "3px solid black"}}>
             There is nothing inherently “better” about being at a higher level of development, just as an adolescent is not “better” than a toddler. However, the fact remains that an adolescent is able to do more, because he or she can think in more sophisticated ways than a toddler.
           </Quote>
         </Slide>
