@@ -9,7 +9,8 @@ import preloader from '../src/utils/preloader'
 
 const images = {
   wolfpack: require('./wolfpack.jpg'),
-  army: require('./army.jpg')
+  army: require('./army.jpg'),
+  machine: require('./machine.jpg')
 }
 
 preloader( Object.keys(images).map(k => images[k]) )
@@ -162,6 +163,33 @@ export default class extends React.Component {
 
         <Slide bgColor='orange'>
           <Heading>Orange</Heading>
+        </Slide>
+
+        <Slide bgImage={images.machine}>
+        </Slide>
+
+        <Slide bgColor='orange' notes='Unlike Amber, freedom on the how, control on the what.'>
+          <Heading fit>Competition</Heading>
+          <Appear>
+            <Heading fit>Profit & Growth</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Management by objectives</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='orange'>
+          <Heading fit>Innovation</Heading>
+          <Appear>
+            <Heading fit>Accountability</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Meritocracy</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='orange'>
+          <Heading>Multinational companies</Heading>
         </Slide>
 
         <Slide bgColor='green'>
