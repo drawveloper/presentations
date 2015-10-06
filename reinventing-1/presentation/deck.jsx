@@ -96,7 +96,7 @@ export default class extends React.Component {
           <Heading>Red</Heading>
         </Slide>
 
-        <Slide bgImage={images.wolfpack}>
+        <Slide bgImage={images.wolfpack.replace('/', '')}>
         </Slide>
 
         <Slide bgColor='red'>
@@ -127,7 +127,7 @@ export default class extends React.Component {
           <Heading>Amber</Heading>
         </Slide>
 
-        <Slide bgImage={images.army}>
+        <Slide bgImage={images.army.replace('/', '')}>
         </Slide>
 
         <Slide bgColor='#FF7E00'>
@@ -167,7 +167,7 @@ export default class extends React.Component {
           <Heading>Orange</Heading>
         </Slide>
 
-        <Slide bgImage={images.machine}>
+        <Slide bgImage={images.machine.replace('/', '')}>
         </Slide>
 
         <Slide bgColor='orange' notes='Unlike Amber, freedom on the how, control on the what.'>
@@ -198,7 +198,7 @@ export default class extends React.Component {
           <Heading>Green</Heading>
         </Slide>
 
-        <Slide bgImage={images.family}>
+        <Slide bgImage={images.family.replace('/', '')}>
         </Slide>
 
         <Slide bgColor='green'>
@@ -229,7 +229,7 @@ export default class extends React.Component {
           <Heading>Teal</Heading>
         </Slide>
 
-        <Slide bgImage={images.organism}>
+        <Slide bgImage={images.organism.replace('/', '')}>
         </Slide>
 
         <Slide bgColor='#18A7B5'>
