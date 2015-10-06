@@ -133,7 +133,7 @@ export default class extends React.Component {
         <Slide bgColor='#FF7E00'>
           <Heading fit>Rigid Hierarchy</Heading>
           <Appear>
-            <Heading fit>Stability focus</Heading>
+            <Heading fit>Stability focused</Heading>
           </Appear>
           <Appear>
             <Heading fit>Command & Control</Heading>
@@ -253,6 +253,27 @@ export default class extends React.Component {
         </Slide>
 
         <Slide bgColor='#18A7B5'>
+          <Heading size={3} fit textColor='white'>
+            Almost no staff functions
+          </Heading>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Minimum plans & budgets
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Fluid and granular roles
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Decision making decentralized
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='#18A7B5'>
           <Heading>Wholeness</Heading>
         </Slide>
 
@@ -260,6 +281,27 @@ export default class extends React.Component {
           <Quote textColor='white' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid white"}}>
             Organizations encourage people to show up with a narrow “professional” self. Teal Organizations invite us to reclaim our inner wholeness and bring all of who we are to work.
           </Quote>
+        </Slide>
+
+        <Slide bgColor='#18A7B5'>
+          <Heading size={3} fit textColor='white'>
+            Absence of job titles and descriptions
+          </Heading>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Time devoted to address conflicts
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Interviews by future colleagues
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Focus on fit with organization
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide bgColor='#18A7B5'>
@@ -272,6 +314,27 @@ export default class extends React.Component {
           </Quote>
         </Slide>
 
+        <Slide bgColor='#18A7B5'>
+          <Heading size={3} fit textColor='white'>
+            Strategy emerges organically
+          </Heading>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Competition is irrelevant
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Profit as lagging indicator
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} fit textColor='white'>
+              Sense and respond
+            </Heading>
+          </Appear>
+        </Slide>
+
         <Slide>
           <Heading textColor='black'>
             There's more...
@@ -279,17 +342,17 @@ export default class extends React.Component {
         </Slide>
 
         <Slide notes='Breathing, freedom and responsibility, solitude and community'>
-          <Heading size={3} textColor='black'>
+          <Heading size={3} fit textColor='black'>
             The role of ego
           </Heading>
           <Appear>
-            <Heading size={3} textColor='black'>
+            <Heading size={3} fit textColor='black'>
               Either-or vs both-and
             </Heading>
           </Appear>
           <Appear>
-            <Heading size={3} textColor='black'>
-              Consensus vs advice
+            <Heading size={3} fit textColor='black'>
+              Assumptions (trust, etc.)
             </Heading>
           </Appear>
         </Slide>
@@ -301,7 +364,7 @@ export default class extends React.Component {
           </Quote>
         </Slide>
         */}
-       
+
         <Slide>
           <Quote textColor='black' style={{textAlign: 'left', fontSize: '3.6em', borderLeft: "3px solid black"}}>
             There is nothing inherently “better” about being at a higher level of development, just as an adolescent is not “better” than a toddler. However, the fact remains that an adolescent is able to do more, because he or she can think in more sophisticated ways than a toddler.
