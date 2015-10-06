@@ -80,6 +80,11 @@ export default class extends React.Component {
           <Heading size={3} fit textColor='black'>
             Paradigms
           </Heading>
+          <Appear>
+            <Heading fit textColor='black'>
+              Analogy, Characteristics, Breakthroughs, Examples
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide bgColor='red'>
@@ -88,6 +93,16 @@ export default class extends React.Component {
 
         <Slide bgColor='red'>
           Wolfpack
+        </Slide>
+
+        <Slide bgColor='red'>
+          <Heading fit>Powerful Leader</Heading>
+          <Appear>
+            <Heading fit>Inspires fear</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Thrives in chaos</Heading>
+          </Appear>
         </Slide>
 
         <Slide bgColor='red'>
@@ -147,9 +162,47 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading textColor='black'>
+            There's more...
+          </Heading>
+        </Slide>
+
+        <Slide notes='Breathing, freedom and responsibility, solitude and community'>
+          <Heading size={3} textColor='black'>
+            The role of ego
+          </Heading>
+          <Appear>
+            <Heading size={3} textColor='black'>
+              Either-or vs both-and
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={3} textColor='black'>
+              Consensus vs advice
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide>
           <Quote textColor='black' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid black"}}>
             The level of consciousness of an organization cannot exceed the level of consciousness of its leader.
           </Quote>
+        </Slide>
+
+        <Slide>
+          <Quote textColor='black' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid black"}}>
+            There is nothing inherently “better” about being at a higher level of development, just as an adolescent is not “better” than a toddler. However, the fact remains that an adolescent is able to do more, because he or she can think in more sophisticated ways than a toddler.
+          </Quote>
+        </Slide>
+
+        <Slide bgColor='black'>
+          <Heading>
+            Thanks!
+          </Heading>
+          <br/>
+          <Heading size={1} fit>
+            <Link href='http://tiny.cc/reinventing'>tiny.cc/reinventing</Link>
+          </Heading>
         </Slide>
       </Deck>
     )
