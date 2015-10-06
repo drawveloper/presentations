@@ -15,7 +15,7 @@ const images = {
   organism: require('./organism.jpg')
 }
 
-preloader( Object.keys(images).map(k => images[k]) )
+preloader( Object.keys(images).map(k => images[k].replace('/', '')) )
 
 export default class extends React.Component {
   render() {
