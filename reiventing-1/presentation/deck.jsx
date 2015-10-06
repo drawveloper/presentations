@@ -10,7 +10,8 @@ import preloader from '../src/utils/preloader'
 const images = {
   wolfpack: require('./wolfpack.jpg'),
   army: require('./army.jpg'),
-  machine: require('./machine.jpg')
+  machine: require('./machine.jpg'),
+  family: require('./family.jpg')
 }
 
 preloader( Object.keys(images).map(k => images[k]) )
@@ -100,10 +101,10 @@ export default class extends React.Component {
         <Slide bgColor='red'>
           <Heading fit>Powerful Leader</Heading>
           <Appear>
-            <Heading fit>Inspires fear</Heading>
+            <Heading fit>Thrives in chaos</Heading>
           </Appear>
           <Appear>
-            <Heading fit>Thrives in chaos</Heading>
+            <Heading fit>Inspires fear</Heading>
           </Appear>
         </Slide>
 
@@ -131,10 +132,10 @@ export default class extends React.Component {
         <Slide bgColor='#FF7E00'>
           <Heading fit>Rigid Hierarchy</Heading>
           <Appear>
-            <Heading fit>Command & Control</Heading>
+            <Heading fit>Stability focus</Heading>
           </Appear>
           <Appear>
-            <Heading fit>Stability focus</Heading>
+            <Heading fit>Command & Control</Heading>
           </Appear>
         </Slide>
 
@@ -194,6 +195,33 @@ export default class extends React.Component {
 
         <Slide bgColor='green'>
           <Heading>Green</Heading>
+        </Slide>
+
+        <Slide bgImage={images.family}>
+        </Slide>
+
+        <Slide bgColor='green'>
+          <Heading fit>Focus on culture</Heading>
+          <Appear>
+            <Heading fit>Employee engagement</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Consensus oriented</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='green'>
+          <Heading fit>Values-driven culture</Heading>
+          <Appear>
+            <Heading fit>Empowerment</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Stakeholder model</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='green'>
+          <Heading>Startups</Heading>
         </Slide>
 
         <Slide bgColor='#18A7B5'>
