@@ -8,14 +8,16 @@ import {
 import preloader from '../src/utils/preloader'
 
 const images = {
+  wolfpack: require('./wolfpack.jpg'),
+  army: require('./army.jpg')
 }
 
-preloader( [ ] )
+preloader( Object.keys(images).map(k => images[k]) )
 
 export default class extends React.Component {
   render() {
     return (
-      <Deck transition={ [ 'fade' ] } transitionDuration={333}>
+      <Deck progress='bar' transition={ [ 'fade' ] } transitionDuration={333}>
         <Slide>
           <Heading size={1} fit caps lineHeight={1.2} textColor='black'>
             Reinventing
@@ -91,8 +93,7 @@ export default class extends React.Component {
           <Heading>Red</Heading>
         </Slide>
 
-        <Slide bgColor='red'>
-          Wolfpack
+        <Slide bgImage={images.wolfpack}>
         </Slide>
 
         <Slide bgColor='red'>
@@ -112,19 +113,59 @@ export default class extends React.Component {
           </Appear>
         </Slide>
 
+        <Slide bgColor='red'>
+          <Heading>Mafia</Heading>
+          <Appear>
+            <Heading>Gangs</Heading>
+          </Appear>
+        </Slide>
+
         <Slide bgColor='#FF7E00'>
           <Heading>Amber</Heading>
+        </Slide>
 
+        <Slide bgImage={images.army}>
+        </Slide>
+
+        <Slide bgColor='#FF7E00'>
+          <Heading fit>Rigid Hierarchy</Heading>
+          <Appear>
+            <Heading fit>Command & Control</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Stability focus</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='#FF7E00'>
+          <Heading fit>Formal roles</Heading>
+          <Appear>
+            <Heading fit>Rigorous processes</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Long term perspective</Heading>
+          </Appear>
+        </Slide>
+
+        <Slide bgColor='#FF7E00'>
+          <Heading>Churches</Heading>
+          <Appear>
+            <Heading>Military</Heading>
+          </Appear>
+          <Appear>
+            <Heading>Government</Heading>
+          </Appear>
+          <Appear>
+            <Heading>Schools</Heading>
+          </Appear>
         </Slide>
 
         <Slide bgColor='orange'>
           <Heading>Orange</Heading>
-
         </Slide>
 
         <Slide bgColor='green'>
           <Heading>Green</Heading>
-
         </Slide>
 
         <Slide bgColor='#18A7B5'>
