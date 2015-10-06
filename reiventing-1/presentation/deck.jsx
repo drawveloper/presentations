@@ -11,7 +11,8 @@ const images = {
   wolfpack: require('./wolfpack.jpg'),
   army: require('./army.jpg'),
   machine: require('./machine.jpg'),
-  family: require('./family.jpg')
+  family: require('./family.jpg'),
+  organism: require('./organism.jpg')
 }
 
 preloader( Object.keys(images).map(k => images[k]) )
@@ -55,7 +56,7 @@ export default class extends React.Component {
         </Slide>
 
         <Slide bgColor='secondary'>
-          <Quote style={{textAlign: 'left', fontSize: '5.2em'}}>
+          <Quote style={{textAlign: 'left', fontSize: '5em'}}>
             Problems can’t be solved with the same level of consciousness that created them in the first place.
           </Quote>
         </Slide>
@@ -228,6 +229,19 @@ export default class extends React.Component {
           <Heading>Teal</Heading>
         </Slide>
 
+        <Slide bgImage={images.organism}>
+        </Slide>
+
+        <Slide bgColor='#18A7B5'>
+          <Heading fit>Anti-fragile organization</Heading>
+          <Appear>
+            <Heading fit>Higher purpose</Heading>
+          </Appear>
+          <Appear>
+            <Heading fit>Distributed Leadership</Heading>
+          </Appear>
+        </Slide>
+
         <Slide bgColor='#18A7B5'>
           <Heading>Self management</Heading>
         </Slide>
@@ -280,12 +294,14 @@ export default class extends React.Component {
           </Appear>
         </Slide>
 
+        {/*
         <Slide>
           <Quote textColor='black' style={{textAlign: 'left', fontSize: '4.2em', borderLeft: "3px solid black"}}>
             The level of consciousness of an organization cannot exceed the level of consciousness of its leader.
           </Quote>
         </Slide>
-
+        */}
+       
         <Slide>
           <Quote textColor='black' style={{textAlign: 'left', fontSize: '3.6em', borderLeft: "3px solid black"}}>
             There is nothing inherently “better” about being at a higher level of development, just as an adolescent is not “better” than a toddler. However, the fact remains that an adolescent is able to do more, because he or she can think in more sophisticated ways than a toddler.
