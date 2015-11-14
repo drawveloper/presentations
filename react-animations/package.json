@@ -1,0 +1,48 @@
+{
+  "name": "react-animations",
+  "version": "0.0.1",
+  "description": "React Animations workshop for Thinkful",
+  "main": "index.js",
+  "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack-dev-server",
+    "hot": "WEBPACK_ENV=hot webpack-dev-server",
+    "build": "webpack",
+    "lint-node": "eslint -c .eslintrc-node webpack.*.js",
+    "lint-react": "eslint --ext .js,.jsx -c .eslintrc-react *.jsx presentation themes",
+    "lint": "npm run lint-node && npm run lint-react",
+    "test": "npm run lint"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "alt": "0.16.10",
+    "autoprefixer-core": "^5.2.1",
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "file-loader": "^0.8.4",
+    "hjs-webpack": "2.8.1",
+    "json-loader": "^0.5.2",
+    "normalize.css": "^3.0.3",
+    "postcss-loader": "^0.5.1",
+    "raw-loader": "^0.5.1",
+    "react": "0.13.3",
+    "react-hot-loader": "^1.2.8",
+    "react-router": "1.0.0-beta2",
+    "spectacle": "0.1.6",
+    "style-loader": "0.12.3",
+    "stylus-loader": "1.2.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0",
+    "yeticss": "^7.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "eslint": "^1.1.0",
+    "eslint-config-defaults": "^4.0.1",
+    "eslint-plugin-filenames": "^0.1.2",
+    "eslint-plugin-react": "^3.2.2",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
