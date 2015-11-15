@@ -64,3 +64,34 @@ html, body {
 .transition-example:hover {
   background-color: green;
 }
+
+.transition-example-2 {
+  background-color: red;
+}
+
+.transition-example-2:hover {
+  background-color: green;
+  transition: background-color 1s;
+}
+
+.example-enter {
+  opacity: 0.01;
+  /*background-color: red;*/
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  /*background-color: green;*/
+  transition: opacity 1000ms ease-in;
+}
+
+.example-leave {
+  /*background-color: red;*/
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  /*background-color: blue;*/
+  transition: opacity 1000ms ease-in;
+}

@@ -7,10 +7,37 @@ import {
 
 import preloader from 'spectacle/src/utils/preloader'
 
+const CSSTransitionGroup = React.addons.CSSTransitionGroup
+
 const images = {
 }
 
 // preloader( Object.keys(images).map(k => images[k].replace('/', '')) )
+
+class TransitionExample extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {visible: true};
+  }
+
+  render() {
+    return (
+      <CSSTransitionGroup
+          component="div"
+          style={{width:'100%', height: 120, cursor: 'pointer'}}
+          onClick={() => this.setState({visible: !this.state.visible})}
+          transitionName="example"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}>
+          {this.state.visible &&
+            <Heading size={1} key="content">
+              Hello, world!
+            </Heading>
+          }
+      </CSSTransitionGroup>
+    )
+  }
+}
 
 export default class extends React.Component {
   render() {
@@ -165,6 +192,25 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading size={1}>Question</Heading>
+          <Heading size={3}>What happens if we move the transition property?</Heading>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="css"
+            source={require("raw!./transition2.css.example")}
+            margin="20px auto"/>
+          <div className="transition-example-2" style={{
+              width: 210,
+              height: 210,
+              position: "absolute",
+              top: 80,
+              right: 60
+            }}></div>
+        </Slide>
+
+        <Slide>
           <Heading size={1}>
             CSS Animations
           </Heading>
@@ -188,6 +234,47 @@ export default class extends React.Component {
               for everything else
             </Heading>
           </Appear>
+        </Slide>
+
+        {
+        // Part 3 - CSSTransitionGroup
+        }
+
+        <Slide>
+          <Heading size={1} fit lineHeight={1.2}>
+            {"<CSSTransitionGroup/>"}
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
+            "React provides a (...) ReactCSSTransitionGroup for easily implementing basic CSS animations and transitions."
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="js"
+            source={require("raw!./react.jsx.example")}
+            margin="20px auto"/>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="js"
+            source={require("raw!./react.css.example")}
+            margin="20px auto"/>
+        </Slide>
+
+        <Slide>
+          <TransitionExample/>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="js"
+            source={require("raw!./react2.jsx.example")}
+            margin="20px auto"/>
         </Slide>
 
         <Slide>
