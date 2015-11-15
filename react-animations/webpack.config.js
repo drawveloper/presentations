@@ -2,7 +2,7 @@
 
 var path = require("path");
 var getConfig = require("hjs-webpack");
-var html = require("./themes/formidable/html");
+var html = require("./themes/thinkful/html");
 
 var webpackConfig = module.exports = getConfig({
   in: "./index.jsx",

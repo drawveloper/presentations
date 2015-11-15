@@ -109,7 +109,8 @@ module.exports = {
     blockquote: {
       textAlign: "left",
       position: "relative",
-      display: "inline-block"
+      display: "inline-block",
+      fontSize: "3.9em"
     },
     quote: {
       borderLeft: "3px solid " + colors.primary,
@@ -174,7 +175,7 @@ module.exports = {
         margin: 0
       },
       h3: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "4.9em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -182,7 +183,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h4: {
-        color: "black",
+        color: colors.secondary,
         fontSize: "3.82em",
         fontFamily: fonts.primary,
         lineHeight: 1,

@@ -30,8 +30,78 @@ export default class extends React.Component {
             What we're doing today
           </Heading>
           <Appear>
-            <Heading size={1} fit>
-              Why animate?
+            <Heading size={4}>
+              1. Why animate?
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              2. CSS Animations
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              3. CSSTransitionGroup
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              4. Animation Components
+            </Heading>
+          </Appear>
+        </Slide>
+
+        {
+        // Part 1 - Why Animate?
+        }
+
+        <Slide>
+          <Heading size={1} fit caps lineHeight={1.2}>
+            Why Animate?
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
+            "Watching an object move demonstrates whether it’s light, heavy, flexible, rigid, small or large."
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
+            "Responsive interaction encourages deeper exploration of an app by creating timely, logical, and delightful screen reactions to user input."
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
+            "Motion design can effectively guide the user’s attention in ways that both inform and delight."
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
+            "A well-designed transition tells the user where to focus their attention."
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <Heading size={1}>
+            Why animate?
+          </Heading>
+          <Appear>
+            <Heading size={4}>
+              1. Inform the user.
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              2. Respond to user input.
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              3. Focus user attention.
             </Heading>
           </Appear>
         </Slide>
