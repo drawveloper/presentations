@@ -1,0 +1,13 @@
+var CSSTransitionGroup =
+  require('react-addons-css-transition-group');
+
+<CSSTransitionGroup
+  transitionName="example"
+  transitionEnterTimeout={1000}
+  transitionLeaveTimeout={1000}>
+  {this.state.visible &&
+    <Heading size={1} key="content">
+      Hello, world!
+    </Heading>
+  }
+</CSSTransitionGroup>

@@ -1,0 +1,8 @@
+.transition-example-2 {
+  background-color: red;
+}
+
+.transition-example-2:hover {
+  background-color: green;
+  transition: background-color 1s;
+}

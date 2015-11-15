@@ -1,0 +1,11 @@
+var CSSTransitionGroup =
+  require('react-addons-css-transition-group');
+
+items = renderListOfItemsWithKeys();
+
+<CSSTransitionGroup
+  transitionName="example"
+  transitionEnterTimeout={1000}
+  transitionLeaveTimeout={1000}>
+  {items}
+</CSSTransitionGroup>
