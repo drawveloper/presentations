@@ -1,7 +1,7 @@
 import React from 'react/addons'
 
 import {
-  Appear, BlockQuote, Cite, Deck, Fill,
+  Appear, BlockQuote, Cite, Deck, Fill, CodePane,
   Heading, Image, Layout, Link, ListItem, List, Quote, Slide, Text
 } from 'spectacle/src/spectacle'
 
@@ -104,6 +104,102 @@ export default class extends React.Component {
               3. Focus user attention.
             </Heading>
           </Appear>
+        </Slide>
+
+        {
+        // Part 2 - CSS Animations
+        }
+
+        <Slide>
+          <Heading size={1} fit caps lineHeight={1.2}>
+            CSS Animations
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <Heading size={1} fit lineHeight={1.2}>
+            <code>animation</code> vs <code>transition</code>
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="css"
+            source={require("raw!./animation.css.example")}
+            margin="20px auto"/>
+          <div className="pulse-example" style={{
+              width: 250,
+              height: 250,
+              position: "absolute",
+              top: 80,
+              right: 60
+            }}></div>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="css"
+            source={require("raw!./animation2.css.example")}
+            margin="20px auto"/>
+          <div className="pulse-example-2" style={{
+              width: 250,
+              height: 250,
+              position: "absolute",
+              top: 80,
+              right: 60
+            }}></div>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="css"
+            source={require("raw!./transition.css.example")}
+            margin="20px auto"/>
+          <div className="transition-example" style={{
+              width: 210,
+              height: 210,
+              position: "absolute",
+              top: 80,
+              right: 60
+            }}></div>
+        </Slide>
+
+        <Slide>
+          <Heading size={1}>
+            CSS Animations
+          </Heading>
+          <Appear>
+            <Heading size={4}>
+              <code>animation</code>
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              for complex tasks
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              <code>transition</code>
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4}>
+              for everything else
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide>
+          <Heading size={4}>
+            <Link href="https://www.google.com/design/spec/material-design/introduction.html">Google Material Design</Link>
+          </Heading>
+          <Heading size={4}>
+            <Link href="https://css-tricks.com/almanac/properties/a/animation/">CSS Tricks - Animation</Link>
+          </Heading>
+          <Heading size={4}>
+            <Link href="https://css-tricks.com/almanac/properties/t/transition/">CSS Tricks - Transition</Link>
+          </Heading>
         </Slide>
 
         <Slide>

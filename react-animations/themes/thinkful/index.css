@@ -23,3 +23,44 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+@keyframes pulse {
+  0% {
+    background-color: #FF0000;
+  }
+  50% {
+    background-color: #00FF00;
+  }
+  100% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse-2 {
+  0%, 100% {
+    background-color: #FF0000;
+  }
+  33% {
+    background-color: #00FF00;
+  }
+  66% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example-2 {
+  animation: pulse-2 10s infinite;
+}
+
+.transition-example {
+  background-color: red;
+  transition: background-color 1s;
+}
+
+.transition-example:hover {
+  background-color: green;
+}

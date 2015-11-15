@@ -135,7 +135,7 @@ module.exports = {
     codePane: {
       pre: {
         margin: "auto",
-        fontSize: "1em",
+        fontSize: "2em",
         fontWeight: "normal",
         fontFamily: fonts.tertiary,
         minWidth: "100%",
@@ -212,8 +212,9 @@ module.exports = {
       margin: "0.5em auto"
     },
     link: {
-      textDecoration: "none",
-      color: colors.primary
+      textDecoration: "underline",
+      borderColor: colors.secondary,
+      color: colors.secondary
     },
     listItem: {
       fontSize: "2.66em"
